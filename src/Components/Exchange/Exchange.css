@@ -1,0 +1,75 @@
+.exchange-input-row{
+    display: flex;
+    flex-flow: row nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+.input-field{
+    margin: 0 5px;
+}
+
+/* .btn-success  {
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  } */
+
+input {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+select {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+
+  .result-input {
+    padding: 5px;
+    background-color: aliceblue;
+    
+  }
+
+  .btn{
+    overflow: hidden;
+    background-color: rgb(109, 167, 123);
+    padding: 20px 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .7);
+    text-decoration: none;
+    color: black;
+    position: relative;
+    overflow: hidden;
+    
+    
+}
+.btn span{
+    position: relative;
+    z-index: 1;
+}
+.btn::before{
+    content: "";
+    position: absolute;
+    background-color: rgb(16, 90, 6);
+    width: 0px;
+    height: 0px;
+    left: var(--xPos);
+    top: var(--yPos);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition: width .5s, height 0.5s;
+    
+}
+.btn:hover::before{
+    width: 300px;
+    height: 300px;
+    
+}
